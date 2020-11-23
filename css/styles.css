@@ -52,6 +52,7 @@ body {
   width: 100%;
   object-fit: cover;
   transition: transform var(--animation-duration) var(--timing-function);
+  border-radius: 2px;
 }
 
 .gallery__link {
@@ -77,6 +78,9 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--animation-duration) var(--timing-function);
+
+  overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .lightbox.is-open {
@@ -108,6 +112,7 @@ body {
   height: auto;
   max-height: 100vh;
   max-width: 100vw;
+  border-radius: 10px;
 }
 
 .lightbox__button {
